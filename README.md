@@ -25,8 +25,11 @@ deployed on hardware accelerators, such as GPUs and
 Waymax can be installed via pip using the following command:
 
 ```
+conda create -n waymax python=3.10 -c conda-forge
+conda activate waymax
 pip install --upgrade pip
-pip install git+https://github.com/waymo-research/waymax.git@main#egg=waymo-waymax
+pip install waymo-open-dataset-tf-2-11-0==1.6.0
+pip install -e .
 ```
 
 Please refer to [JAX](https://github.com/google/jax#installation) for specific
