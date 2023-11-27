@@ -165,6 +165,8 @@ def get_control_mask(
     is_controlled = metadata.is_modeled
   elif obj_type == config.ObjectType.VALID:
     is_controlled = metadata.is_valid
+  elif obj_type == config.ObjectType.CONTROLLED:
+    is_controlled = metadata.is_controlled 
   else:
     raise ValueError(f'Invalid ObjectType {obj_type}')
   return is_controlled

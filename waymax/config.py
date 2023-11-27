@@ -171,6 +171,7 @@ class ObjectType(enum.Enum):
   MODELED = 'MODELED'  # tracks_to_predict objects defined in WOMD.
   VALID = 'VALID'  # All valid objects in the scene.
   NON_SDC = 'NON_SDC'  # Any objects expect the SDC (ego-vehicle).
+  CONTROLLED = 'CONTROLLED'  # All controlled objects, including SDC.
 
 
 class SimAgentType(enum.Enum):
